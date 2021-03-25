@@ -1,4 +1,4 @@
-# Gapstars – Assessment (PHP /Angular) Tree Facets
+# Gapstars – Assessment (Backend API - Slim Framework 4)
 
 ## System requirements 
 * PHP >= 7.1.3
