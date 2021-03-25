@@ -1,42 +1,51 @@
-# Slim Framework 4 Skeleton Application
+# Gapstars – Assessment (PHP /Angular) Tree Facets
 
 [![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 4 application. This application uses the latest Slim 4 with Slim PSR-7 implementation and PHP-DI container implementation. It also uses the Monolog logger.
-
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+## System requirements 
+* PHP >= 7.1.3
+* mysql >= 8.0
+* `composer` installed 
+* `git`  installed
 
 ## Install the Application
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+You should start by cloning the repository into your local machine.
 
 ```bash
-composer create-project slim/slim-skeleton [my-app-name]
+git clone https://github.com/sali141/gapstars-facet-api.git 
+cd  gapstars-facet-api
+```
+# Setup database
+Create new database in mysql. 
+```bash
+CREATE DATABASE `facets`;
 ```
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+Find database dump file under `gapstars-facet-api/db/facets_categories.sql` 
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writable.
-
-To run the application in development, you can run these commands 
+Import dump to the database 
 
 ```bash
-cd [my-app-name]
-composer start
+mysql -u username -p facets <  facets_categories.sql
 ```
 
-Or you can use `docker-compose` to run the app with `docker`, so you can run these commands:
-```bash
-cd [my-app-name]
-docker-compose up -d
-```
-After that, open `http://localhost:8080` in your browser.
-
-Run this command in the application directory to run the test suite
+Open below php file and update your mysql root password
+`gapstars-facet-api/app/settings.php` 
 
 ```bash
-composer test
+line# 26 → 'password' => 'xxxx',
 ```
 
-That's it! Now go build something cool.
+# Install dependencies
+
+go to folder `gapstars-facet-api`
+
+```bash
+cd gapstars-facet-api
+```
+
+run below command
+```bash
+composer install
+```
