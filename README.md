@@ -16,7 +16,7 @@ You should start by cloning the repository into your local machine.
 git clone https://github.com/sali141/gapstars-facet-api.git 
 cd  gapstars-facet-api
 ```
-# Setup database
+### Setup database
 Create new database in mysql. 
 ```bash
 CREATE DATABASE `facets`;
@@ -37,7 +37,7 @@ Open below php file and update your mysql root password
 line# 26 → 'password' => 'xxxx',
 ```
 
-# Install dependencies
+### Install dependencies
 
 go to folder `gapstars-facet-api`
 
