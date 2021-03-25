@@ -1,7 +1,5 @@
 # Gapstars – Assessment (PHP /Angular) Tree Facets
 
-[![Coverage Status](https://coveralls.io/repos/github/slimphp/Slim-Skeleton/badge.svg?branch=master)](https://coveralls.io/github/slimphp/Slim-Skeleton?branch=master)
-
 ## System requirements 
 * PHP >= 7.1.3
 * mysql >= 8.0
@@ -49,3 +47,18 @@ run below command
 ```bash
 composer install
 ```
+
+## Run Backend API
+
+go to folder `gapstars-facet-api`
+
+```bash
+cd gapstars-facet-api
+```
+
+run below command
+```bash
+composer start
+```
+
+go to `http://localhost:8080/` from the browser and make sure the API server works fine
