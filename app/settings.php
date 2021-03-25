@@ -23,7 +23,7 @@ return function (ContainerBuilder $containerBuilder) {
                     'host' => 'localhost',
                     'username' => 'root',
                     'database' => 'facets',
-                    'password' => 'dil#00912S',
+                    'password' => 'xxxx',
                     'charset' => 'utf8mb4',
                     'collation' => 'utf8mb4_unicode_ci',
                     'flags' => [
